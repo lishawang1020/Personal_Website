@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/starry_sky.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+#home-nav {
+  background: none;
+}
+
+.banner {
+  width: 100%;
+  height: 450px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url(../images/tokyo_night.jpg);
+  background-size: cover;
+}
+
+h4 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 60px;
+}
+
+.name {
+  width: 30%;
+  float: left;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  line-height: 80px;
+  padding-left: 70px;
+}
+
+nav {
+  float: right;
+  line-height: 80px;
+  padding-right: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.active-page {
+  text-decoration: white;
+  color: grey;
+}
+
+body h3 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+body p {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: 40px;
+  }
+
+  nav {
+    float: right;
+    line-height: 40px;
+    padding-right: 20px;
+  }
+
+  .name {
+    letter-spacing: 0.2px;
+    font-size: 10px;
+    line-height: 40px;
+    padding-left: 20px;
+  }
+
+  nav a {
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
+  body h3 {
+    padding-top: 120px;
+    font-size: 50px;
+  }
+
+  body p {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+
+  .banner {
+    height: 150px;
+  }
+}

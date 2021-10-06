@@ -1,0 +1,106 @@
+body {
+  background: none;
+}
+
+h5 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-1] 2fr [col-2] 2fr [col-3] 1fr [col-end];
+  grid-template-rows: [row-start] 1fr [row-1] 1fr [row-2] 1fr [row-end];
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.project1 {
+  grid-column-start: col-1;
+  grid-column-end: col-2;
+  grid-row-start: row-start;
+  grid-row-end: row-1;
+}
+
+.description1 {
+  grid-column-start: col-2;
+  grid-column-end: col-3;
+  grid-row-start: row-start;
+  grid-row-end: row-1;
+}
+
+.project2 {
+  grid-column-start: col-2;
+  grid-column-end: col-3;
+  grid-row-start: row-1;
+  grid-row-end: row-2;
+}
+
+.description2 {
+  grid-column-start: col-1;
+  grid-column-end: col-2;
+  grid-row-start: row-1;
+  grid-row-end: row-2;
+}
+
+.project3 {
+  grid-column-start: col-1;
+  grid-column-end: col-2;
+  grid-row-start: row-2;
+  grid-row-end: row-end;
+}
+
+.description3 {
+  grid-column-start: col-2;
+  grid-column-end: col-3;
+  grid-row-start: row-2;
+  grid-row-end: row-end;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-gap: 2px;
+    padding: 20px;
+  }
+
+  .container > div {
+    padding: 0px 0px;
+  }
+
+  h5 {
+    padding-top: 0px;
+    font-size: 10px;
+  }
+
+  span {
+    font-size: 5px;
+  }
+
+  .project1 > img {
+    width: 250px;
+  }
+
+  .project2 > img {
+    width: 250px;
+  }
+
+  .project3 > img {
+    width: 200px;
+  }
+}
